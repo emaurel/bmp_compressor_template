@@ -1,0 +1,351 @@
+{
+ "kind": "ComputedTableSchema",
+ "id": "9f62d286276e50b799e82da547d14e8f073a94bd1f142911aef390c65402e421",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "34b6c7c0-1099-11f0-84c5-c15f2b9ea7e7",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "9f62d286276e50b799e82da547d14e8f073a94bd1f142911aef390c65402e421"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 1,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "8e8e2c06-bd87-4739-827c-d0be222b9345",
+   "name": ".ci",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "33ca65b1-3c3b-497f-9cf5-8045e279bc5f",
+   "name": "ds2.filename",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "5a92cf4c-042a-4172-85f7-46e329906136",
+   "name": "ds2.mimetype",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "7ccdc4b8-eac9-4ba2-aa53-be5f54d8634f",
+   "name": "ds2.checksum",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "20e0065c-4f73-4d4a-8aab-c4b008ad444a",
+   "name": ".content",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/9f/62/9f62d286276e50b799e82da547d14e8f073a94bd1f142911aef390c65402e421",
+ "relation": {
+  "kind": "Relation",
+  "id": "a3d7a911-176e-4011-9981-a2ea6428f128"
+ },
+ "size": 86384,
+ "query": {
+  "kind": "CubeQuery",
+  "relation": {
+   "kind": "RenameRelation",
+   "id": "b7c76a77-bee1-4cfa-98ab-43f8c60019c8",
+   "relation": {
+    "kind": "CompositeRelation",
+    "id": "0b9e057a-f521-4711-9b23-274f05232eac",
+    "joinOperators": [
+     {
+      "kind": "JoinOperator",
+      "joinType": "leftOuter",
+      "leftPair": {
+       "kind": "ColumnPair",
+       "lColumns": [
+        ".ri"
+       ],
+       "rColumns": [
+        "93ec92894e76f59c85f4d864304ece968d8e4cb66423db5b561dfe8f9c5ea8a5._rids"
+       ]
+      },
+      "rightRelation": {
+       "kind": "SimpleRelation",
+       "id": "93ec92894e76f59c85f4d864304ece968d8e4cb66423db5b561dfe8f9c5ea8a5",
+       "index": 2
+      }
+     }
+    ],
+    "mainRelation": {
+     "kind": "CompositeRelation",
+     "id": "883d9eb1-3235-4aa0-a295-c6523664cbfc",
+     "joinOperators": [
+      {
+       "kind": "JoinOperator",
+       "joinType": "leftOuter",
+       "leftPair": {
+        "kind": "ColumnPair",
+        "lColumns": [
+         ".ci"
+        ],
+        "rColumns": [
+         "4ce67ddc57c81290a3cdd7774b02e0f81cb8d417ddbad83d62742b1a99fc9678._rids"
+        ]
+       },
+       "rightRelation": {
+        "kind": "SimpleRelation",
+        "id": "4ce67ddc57c81290a3cdd7774b02e0f81cb8d417ddbad83d62742b1a99fc9678",
+        "index": 1
+       }
+      }
+     ],
+     "mainRelation": {
+      "kind": "SimpleRelation",
+      "id": "72457d6d10d9050168b05e3402271ff081af1acef834effee65d1205f87ffac5",
+      "index": 0
+     }
+    }
+   },
+   "inNames": [
+    "ds1.newColors",
+    "ds1.centroids",
+    ".ci",
+    ".ri",
+    "72457d6d10d9050168b05e3402271ff081af1acef834effee65d1205f87ffac5._rids",
+    "72457d6d10d9050168b05e3402271ff081af1acef834effee65d1205f87ffac5.tlbId",
+    "ds0.x",
+    "4ce67ddc57c81290a3cdd7774b02e0f81cb8d417ddbad83d62742b1a99fc9678._rids",
+    "4ce67ddc57c81290a3cdd7774b02e0f81cb8d417ddbad83d62742b1a99fc9678.tlbId",
+    "ds0.y",
+    "93ec92894e76f59c85f4d864304ece968d8e4cb66423db5b561dfe8f9c5ea8a5._rids",
+    "93ec92894e76f59c85f4d864304ece968d8e4cb66423db5b561dfe8f9c5ea8a5.tlbId",
+    "ds0.x",
+    "ds0.y"
+   ],
+   "outNames": [
+    "ds1.newColors",
+    "ds1.centroids",
+    ".ci",
+    ".ri",
+    "72457d6d10d9050168b05e3402271ff081af1acef834effee65d1205f87ffac5._rids",
+    "72457d6d10d9050168b05e3402271ff081af1acef834effee65d1205f87ffac5.tlbId",
+    "ds0.x",
+    "4ce67ddc57c81290a3cdd7774b02e0f81cb8d417ddbad83d62742b1a99fc9678._rids",
+    "4ce67ddc57c81290a3cdd7774b02e0f81cb8d417ddbad83d62742b1a99fc9678.tlbId",
+    "ds0.y",
+    "93ec92894e76f59c85f4d864304ece968d8e4cb66423db5b561dfe8f9c5ea8a5._rids",
+    "93ec92894e76f59c85f4d864304ece968d8e4cb66423db5b561dfe8f9c5ea8a5.tlbId",
+    "ds1..x",
+    "ds1..y"
+   ]
+  },
+  "colColumns": [
+   {
+    "kind": "Factor",
+    "name": "ds1..x",
+    "type": "int32"
+   }
+  ],
+  "rowColumns": [
+   {
+    "kind": "Factor",
+    "name": "ds1..y",
+    "type": "int32"
+   }
+  ],
+  "axisQueries": [
+   {
+    "kind": "CubeAxisQuery",
+    "pointSize": 4,
+    "chartType": "heatmap",
+    "yAxis": {
+     "kind": "Factor",
+     "name": "ds1.newColors",
+     "type": "double"
+    },
+    "yAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "xAxis": {
+     "kind": "Factor",
+     "name": "",
+     "type": "string"
+    },
+    "xAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "errors": [],
+    "labels": [],
+    "colors": [
+     {
+      "kind": "Factor",
+      "name": "ds1.centroids",
+      "type": "int32"
+     }
+    ],
+    "preprocessors": []
+   }
+  ],
+  "filters": {
+   "kind": "Filters",
+   "removeNaN": true,
+   "namedFilters": []
+  },
+  "operatorSettings": {
+   "kind": "OperatorSettings",
+   "namespace": "ds2",
+   "operatorRef": {
+    "kind": "OperatorRef",
+    "name": "data-to-image_operator",
+    "version": "b5256b703a1715af551fece18947b54114742208",
+    "operatorId": "1",
+    "operatorKind": "DockerOperator",
+    "propertyValues": [],
+    "url": {
+     "kind": "Url",
+     "uri": "https://github.com/emaurel/data-to-image_operator"
+    },
+    "operatorSpec": {
+     "kind": "OperatorSpec",
+     "ontologyUri": "https://tercen.com/_ontology/tercen",
+     "ontologyVersion": "0.0.1",
+     "inputSpecs": [
+      {
+       "kind": "CrosstabSpec",
+       "metaFactors": [
+        {
+         "kind": "MetaFactor",
+         "name": "Y Coordinate",
+         "type": "",
+         "description": "This factor will be used for the Y coordinate of pixels",
+         "ontologyMapping": "page",
+         "crosstabMapping": "row",
+         "cardinality": "1",
+         "factors": []
+        },
+        {
+         "kind": "MetaFactor",
+         "name": "X Coordinate",
+         "type": "",
+         "description": "This factor will be used for the X coordinate of pixels",
+         "ontologyMapping": "sample",
+         "crosstabMapping": "column",
+         "cardinality": "1",
+         "factors": []
+        }
+       ],
+       "axis": [
+        {
+         "kind": "AxisSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "pixels",
+           "type": "numeric",
+           "description": "The pixel values",
+           "ontologyMapping": "y-axis",
+           "crosstabMapping": "y",
+           "cardinality": "1",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "color",
+           "type": "numeric",
+           "description": "The pixel colors",
+           "ontologyMapping": "y-axis",
+           "crosstabMapping": "color",
+           "cardinality": "1",
+           "factors": []
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "outputSpecs": []
+    }
+   },
+   "environment": [],
+   "operatorModel": {
+    "kind": "OperatorModel"
+   }
+  },
+  "qtHash": "",
+  "columnHash": "",
+  "rowHash": ""
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "kind": "FileDocument",
+ "id": "sample_640×426.bmp",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "sample_640×426.bmp",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "dataUri": "lfs/34/a7/d53b4077db9099a0a487e80314a3e25dc8a10f618df7ed2c360a3d74f3a6",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": ""
+ },
+ "size": 818058
+}

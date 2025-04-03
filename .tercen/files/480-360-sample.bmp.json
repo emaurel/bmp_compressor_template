@@ -1,0 +1,42 @@
+{
+ "kind": "FileDocument",
+ "id": "480-360-sample.bmp",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "480-360-sample.bmp",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "dataUri": "lfs/a4/0e/388705c03b92e143706b0370cb546d52f7728c3cda9d247209b0251db27f",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": ""
+ },
+ "size": 518456
+}
