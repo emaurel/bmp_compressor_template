@@ -1,10 +1,10 @@
 {
  "kind": "Workflow",
- "id": "6",
+ "id": "8",
  "isDeleted": false,
  "rev": "",
  "description": "",
- "name": "compress_image_bmp_gs01",
+ "name": "compress_image_bmp",
  "acl": {
   "kind": "Acl",
   "owner": "",
@@ -86,9 +86,9 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "8ff431594994f3c5a5ecb2d85e1f19df",
+    "taskId": "",
     "taskState": {
-     "kind": "DoneState"
+     "kind": "InitState"
     }
    },
    "description": "",
@@ -298,84 +298,8 @@
     "taskId": ""
    },
    "computedRelation": {
-    "kind": "CompositeRelation",
-    "id": "88a1f681-1ef7-4339-9cd9-96305cf49547",
-    "joinOperators": [
-     {
-      "kind": "JoinOperator",
-      "joinType": "",
-      "leftPair": {
-       "kind": "ColumnPair",
-       "lColumns": [
-        "documentId"
-       ],
-       "rColumns": [
-        "documentId"
-       ]
-      },
-      "rightRelation": {
-       "kind": "RenameRelation",
-       "id": "fa1fc3c7-e996-4b2f-acf6-7f2f6105ff00",
-       "relation": {
-        "kind": "CompositeRelation",
-        "id": "dbf0ceea-03a5-41b8-9c94-d71aa1d8edbd",
-        "joinOperators": [
-         {
-          "kind": "JoinOperator",
-          "joinType": "",
-          "leftPair": {
-           "kind": "ColumnPair",
-           "lColumns": [
-            ".ci"
-           ],
-           "rColumns": [
-            "afabea51ed7afe2f85f54ab79b51f5a7708313662c1e934592bff3ce0c0b7007._rids"
-           ]
-          },
-          "rightRelation": {
-           "kind": "SimpleRelation",
-           "id": "afabea51ed7afe2f85f54ab79b51f5a7708313662c1e934592bff3ce0c0b7007",
-           "index": 0
-          }
-         }
-        ],
-        "mainRelation": {
-         "kind": "SimpleRelation",
-         "id": "8aaf8e2b9e40c4f9e657b50ab462d970c0152d17e912d0297f1582a5e54c0af2",
-         "index": 0
-        }
-       },
-       "inNames": [
-        "ds0.color_code",
-        "ds0.x",
-        "ds0.y",
-        ".ci",
-        "8aaf8e2b9e40c4f9e657b50ab462d970c0152d17e912d0297f1582a5e54c0af2._rids",
-        "8aaf8e2b9e40c4f9e657b50ab462d970c0152d17e912d0297f1582a5e54c0af2.tlbId",
-        "documentId",
-        "afabea51ed7afe2f85f54ab79b51f5a7708313662c1e934592bff3ce0c0b7007._rids",
-        "afabea51ed7afe2f85f54ab79b51f5a7708313662c1e934592bff3ce0c0b7007.tlbId",
-        "documentId"
-       ],
-       "outNames": [
-        "ds0.color_code",
-        "ds0.x",
-        "ds0.y",
-        ".ci",
-        "8aaf8e2b9e40c4f9e657b50ab462d970c0152d17e912d0297f1582a5e54c0af2._rids",
-        "8aaf8e2b9e40c4f9e657b50ab462d970c0152d17e912d0297f1582a5e54c0af2.tlbId",
-        "documentId",
-        "afabea51ed7afe2f85f54ab79b51f5a7708313662c1e934592bff3ce0c0b7007._rids",
-        "afabea51ed7afe2f85f54ab79b51f5a7708313662c1e934592bff3ce0c0b7007.tlbId",
-        "ds0..documentId"
-       ]
-      }
-     }
-    ],
-    "mainRelation": {
-     "kind": "Relation",
-     "id": "46412b71-7a76-4268-8ad6-214ad1454bbe"
-    }
+    "kind": "Relation",
+    "id": "62cf1416-3dc4-4346-b072-1362adc33014"
    },
    "parentDataStepId": ""
   },
@@ -415,9 +339,9 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "8ff431594994f3c5a5ecb2d85e1f3d08",
+    "taskId": "",
     "taskState": {
-     "kind": "DoneState"
+     "kind": "InitState"
     }
    },
    "description": "",
@@ -709,112 +633,8 @@
     "taskId": ""
    },
    "computedRelation": {
-    "kind": "CompositeRelation",
-    "id": "2544fa9b-8a0b-4da4-b985-ed9cb9961a17",
-    "joinOperators": [
-     {
-      "kind": "JoinOperator",
-      "joinType": "",
-      "leftPair": {
-       "kind": "ColumnPair",
-       "lColumns": [
-        "ds0.x",
-        "ds0.y"
-       ],
-       "rColumns": [
-        "ds0.x",
-        "ds0.y"
-       ]
-      },
-      "rightRelation": {
-       "kind": "RenameRelation",
-       "id": "fb464032-c11f-4243-87f4-18fe67055a11",
-       "relation": {
-        "kind": "CompositeRelation",
-        "id": "b918b19e-6cee-4f78-84cc-0094dc5748cd",
-        "joinOperators": [
-         {
-          "kind": "JoinOperator",
-          "joinType": "",
-          "leftPair": {
-           "kind": "ColumnPair",
-           "lColumns": [
-            ".ci"
-           ],
-           "rColumns": [
-            "4ce67ddc57c81290a3cdd7774b02e0f81cb8d417ddbad83d62742b1a99fc9678._rids"
-           ]
-          },
-          "rightRelation": {
-           "kind": "SimpleRelation",
-           "id": "4ce67ddc57c81290a3cdd7774b02e0f81cb8d417ddbad83d62742b1a99fc9678",
-           "index": 0
-          }
-         },
-         {
-          "kind": "JoinOperator",
-          "joinType": "",
-          "leftPair": {
-           "kind": "ColumnPair",
-           "lColumns": [
-            ".ri"
-           ],
-           "rColumns": [
-            "93ec92894e76f59c85f4d864304ece968d8e4cb66423db5b561dfe8f9c5ea8a5._rids"
-           ]
-          },
-          "rightRelation": {
-           "kind": "SimpleRelation",
-           "id": "93ec92894e76f59c85f4d864304ece968d8e4cb66423db5b561dfe8f9c5ea8a5",
-           "index": 0
-          }
-         }
-        ],
-        "mainRelation": {
-         "kind": "SimpleRelation",
-         "id": "72457d6d10d9050168b05e3402271ff081af1acef834effee65d1205f87ffac5",
-         "index": 0
-        }
-       },
-       "inNames": [
-        "ds1.newColors",
-        "ds1.centroids",
-        ".ci",
-        ".ri",
-        "72457d6d10d9050168b05e3402271ff081af1acef834effee65d1205f87ffac5._rids",
-        "72457d6d10d9050168b05e3402271ff081af1acef834effee65d1205f87ffac5.tlbId",
-        "ds0.x",
-        "4ce67ddc57c81290a3cdd7774b02e0f81cb8d417ddbad83d62742b1a99fc9678._rids",
-        "4ce67ddc57c81290a3cdd7774b02e0f81cb8d417ddbad83d62742b1a99fc9678.tlbId",
-        "ds0.y",
-        "93ec92894e76f59c85f4d864304ece968d8e4cb66423db5b561dfe8f9c5ea8a5._rids",
-        "93ec92894e76f59c85f4d864304ece968d8e4cb66423db5b561dfe8f9c5ea8a5.tlbId",
-        "ds0.x",
-        "ds0.y"
-       ],
-       "outNames": [
-        "ds1.newColors",
-        "ds1.centroids",
-        ".ci",
-        ".ri",
-        "72457d6d10d9050168b05e3402271ff081af1acef834effee65d1205f87ffac5._rids",
-        "72457d6d10d9050168b05e3402271ff081af1acef834effee65d1205f87ffac5.tlbId",
-        "ds0.x",
-        "4ce67ddc57c81290a3cdd7774b02e0f81cb8d417ddbad83d62742b1a99fc9678._rids",
-        "4ce67ddc57c81290a3cdd7774b02e0f81cb8d417ddbad83d62742b1a99fc9678.tlbId",
-        "ds0.y",
-        "93ec92894e76f59c85f4d864304ece968d8e4cb66423db5b561dfe8f9c5ea8a5._rids",
-        "93ec92894e76f59c85f4d864304ece968d8e4cb66423db5b561dfe8f9c5ea8a5.tlbId",
-        "ds1..x",
-        "ds1..y"
-       ]
-      }
-     }
-    ],
-    "mainRelation": {
-     "kind": "Relation",
-     "id": "b606c687-92db-48c1-a05b-ab7ec595ad3c"
-    }
+    "kind": "Relation",
+    "id": "d6f93e6d-0b6a-4999-9706-aa48d572ae07"
    },
    "parentDataStepId": ""
   },
@@ -854,9 +674,9 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "8ff431594994f3c5a5ecb2d85e1f4e07",
+    "taskId": "",
     "taskState": {
-     "kind": "DoneState"
+     "kind": "InitState"
     }
    },
    "description": "",
@@ -1124,86 +944,8 @@
     "taskId": ""
    },
    "computedRelation": {
-    "kind": "CompositeRelation",
-    "id": "8aa9dada-2b43-4140-a95c-4ae7dd7cce98",
-    "joinOperators": [
-     {
-      "kind": "JoinOperator",
-      "joinType": "",
-      "leftPair": {
-       "kind": "ColumnPair",
-       "lColumns": [
-        "ds1..x"
-       ],
-       "rColumns": [
-        "ds1..x"
-       ]
-      },
-      "rightRelation": {
-       "kind": "RenameRelation",
-       "id": "dc7a4ff5-f655-4484-8d4f-b70c8ecf35c8",
-       "relation": {
-        "kind": "CompositeRelation",
-        "id": "62284cd3-23af-4af4-b7a6-88713454e86d",
-        "joinOperators": [
-         {
-          "kind": "JoinOperator",
-          "joinType": "",
-          "leftPair": {
-           "kind": "ColumnPair",
-           "lColumns": [
-            ".ci"
-           ],
-           "rColumns": [
-            "805b9fb86f4544155fa02209cb0a1dae6ac03cc5c43da6906057f6947258368d._rids"
-           ]
-          },
-          "rightRelation": {
-           "kind": "SimpleRelation",
-           "id": "805b9fb86f4544155fa02209cb0a1dae6ac03cc5c43da6906057f6947258368d",
-           "index": 0
-          }
-         }
-        ],
-        "mainRelation": {
-         "kind": "SimpleRelation",
-         "id": "9f62d286276e50b799e82da547d14e8f073a94bd1f142911aef390c65402e421",
-         "index": 0
-        }
-       },
-       "inNames": [
-        ".ci",
-        "ds2.filename",
-        "ds2.mimetype",
-        "ds2.checksum",
-        ".content",
-        "9f62d286276e50b799e82da547d14e8f073a94bd1f142911aef390c65402e421._rids",
-        "9f62d286276e50b799e82da547d14e8f073a94bd1f142911aef390c65402e421.tlbId",
-        "ds1..x",
-        "805b9fb86f4544155fa02209cb0a1dae6ac03cc5c43da6906057f6947258368d._rids",
-        "805b9fb86f4544155fa02209cb0a1dae6ac03cc5c43da6906057f6947258368d.tlbId",
-        "ds1..x"
-       ],
-       "outNames": [
-        ".ci",
-        "ds2.filename",
-        "ds2.mimetype",
-        "ds2.checksum",
-        ".content",
-        "9f62d286276e50b799e82da547d14e8f073a94bd1f142911aef390c65402e421._rids",
-        "9f62d286276e50b799e82da547d14e8f073a94bd1f142911aef390c65402e421.tlbId",
-        "ds1..x",
-        "805b9fb86f4544155fa02209cb0a1dae6ac03cc5c43da6906057f6947258368d._rids",
-        "805b9fb86f4544155fa02209cb0a1dae6ac03cc5c43da6906057f6947258368d.tlbId",
-        "ds2..x"
-       ]
-      }
-     }
-    ],
-    "mainRelation": {
-     "kind": "Relation",
-     "id": "96fab550-3a49-4481-ba79-a58e351fcf06"
-    }
+    "kind": "Relation",
+    "id": "ae998795-ff4b-4241-83c4-00d09ea35609"
    },
    "parentDataStepId": ""
   },
@@ -1238,81 +980,16 @@
     "kind": "StepState",
     "taskId": "",
     "taskState": {
-     "kind": "DoneState"
+     "kind": "InitState"
     }
    },
    "description": "Select a data set.",
    "model": {
     "kind": "TableStepModel",
     "relation": {
-     "kind": "RenameRelation",
-     "id": "rename_fdbf62c0-5ec3-4234-afca-4bb589bb09df",
-     "relation": {
-      "kind": "InMemoryRelation",
-      "id": "4175be25-dcd1-49d6-8d34-d711d70996a1",
-      "inMemoryTable": {
-       "kind": "Table",
-       "nRows": 1,
-       "properties": {
-        "kind": "TableProperties",
-        "name": "",
-        "sortOrder": [],
-        "ascending": true
-       },
-       "columns": [
-        {
-         "kind": "Column",
-         "id": "documentId",
-         "name": "documentId",
-         "type": "string",
-         "nRows": 1,
-         "size": -1,
-         "metaData": {
-          "kind": "ColumnSchemaMetaData",
-          "sort": [],
-          "ascending": true,
-          "quartiles": [],
-          "properties": []
-         },
-         "cValues": {
-          "kind": "CValues"
-         },
-         "values": [
-          "50619b48-fb93-4809-8b2b-b090d60ca1f4"
-         ]
-        },
-        {
-         "kind": "Column",
-         "id": ".documentId",
-         "name": ".documentId",
-         "type": "string",
-         "nRows": 1,
-         "size": -1,
-         "metaData": {
-          "kind": "ColumnSchemaMetaData",
-          "sort": [],
-          "ascending": true,
-          "quartiles": [],
-          "properties": []
-         },
-         "cValues": {
-          "kind": "CValues"
-         },
-         "values": [
-          "sample_640×426.bmp"
-         ]
-        }
-       ]
-      }
-     },
-     "inNames": [
-      "documentId",
-      ".documentId"
-     ],
-     "outNames": [
-      "documentId",
-      ".documentId"
-     ]
+     "kind": "UnionRelation",
+     "id": "5bb73dce-efa6-4254-ab73-948b801bf3f6",
+     "relations": []
     },
     "filterSelector": ""
    }
